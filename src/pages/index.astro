@@ -1,9 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Navbar from '../components/Navbar.astro';
 ---
 
 <Layout title="Welcome to Astro.">
+    <Navbar/>
 	<main>
 		<h1>Welcome to <span class="text-gradient">Club</span></h1>
 		<p class="instructions">
@@ -35,6 +37,7 @@ import Card from '../components/Card.astro';
         <button class="btn btn-primary">Hello daisyUI</button>  
 
 	</main>
+
 </Layout>
 
 <style>
