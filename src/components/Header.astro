@@ -1,0 +1,21 @@
+---
+import { Image } from "@astrojs/image/components";
+import logo from "../assets/logo.png";
+---
+
+<nav>
+  <div class="bg-[#101329] flex w-full items-center px-20">
+    <div class="">
+      <Image src={logo} alt="descriptive text" />
+    </div>
+
+    <div class="ml-auto flex gap-6 text-stone-50">
+      <a>About us</a>
+      <a>Archive</a>
+      <a>Events</a>
+      <a>Contact</a>
+      <a>Announcements</a>
+      <a>Join us on Discord</a>
+    </div>
+  </div>
+</nav>
