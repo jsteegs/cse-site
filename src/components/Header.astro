@@ -1,21 +1,22 @@
 ---
 import { Image } from "@astrojs/image/components";
 import logo from "../assets/logo.png";
+import DiscordIcon from "./icons/DiscordIcon.astro";
 ---
 
-<nav>
-  <div class="bg-[#101329] flex w-full items-center px-20">
-    <div class="">
-      <Image src={logo} alt="descriptive text" />
-    </div>
-
-    <div class="ml-auto flex gap-6 text-stone-50">
-      <a>About us</a>
-      <a>Archive</a>
-      <a>Events</a>
-      <a>Contact</a>
-      <a>Announcements</a>
-      <a>Join us on Discord</a>
-    </div>
+<header class="bg-[#101329] flex">
+  <div class="">
+    <Image src={logo} alt="descriptive text" />
   </div>
-</nav>
+
+  <div class="ml-auto flex gap-6 text-stone-50 items-center font-montserrat">
+    <a>About us</a>
+    <a>Archive</a>
+    <a>Events</a>
+    <a>Contact</a>
+    <a>Announcements</a>
+    <button class="btn bg-[#5865F2] hover:bg-[#5865F2] text-stone-50 gap-2">
+      <DiscordIcon classes="h-6 w-6 fill-white" /> Join us on Discord
+    </button>
+  </div>
+</header>

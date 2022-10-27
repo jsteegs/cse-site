@@ -1,8 +1,12 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<div>Hello World</div>
+  <div class="flex justify-center">
+    <div class="max-w-screen-xl w-full">
+      <Header />
+    </div>
+  </div>
 </Layout>
-
