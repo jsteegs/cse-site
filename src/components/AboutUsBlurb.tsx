@@ -8,7 +8,7 @@ interface AboutUsBlurbPropTypes {
 
 const AboutUsBlurb = ({ title, description, icon }: AboutUsBlurbPropTypes) => {
   return (
-    <div className="bg-zinc-800 rounded flex">
+    <div className="bg-zinc-800 rounded flex pb-6 mb-7">
       {icon}
       <div className="">
         <div className="font-gillsans font-bold text-xl text-stone-100 pb-3">

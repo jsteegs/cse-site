@@ -4,13 +4,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        montserrat: ["Montserrat", "system-ui"],
-        gillsans: ["Gill Sans", "Georgia"],
+        montserrat: ["Montserrat", "sans-serif"],
+        gillsans: ["Gill Sans", "sans-serif"],
       },
-    colors: {
-      'coyote-blue': '#005EB8',
-      'cse-navy': '#101329',
-    }
+      colors: {
+        "coyote-blue": "#005EB8",
+        "cse-navy": "#101329",
+      },
     },
   },
   plugins: [require("daisyui")],
