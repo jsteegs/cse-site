@@ -1,0 +1,21 @@
+---
+import { Image } from "@astrojs/image/components";
+import meetus from "../assets/meetus.png";
+---
+
+<div class="bg-stone-100">
+  <div class="flex flex-col mx-auto center text-center pt-8 pb-24">
+    <div class="px-16 mb-12">
+      <div class="text-4xl pb-5 text-slate-800 font-bold leading-tight">
+        Meet the <span class="text-coyote-blue">Pack</span>
+      </div>
+      <div class="text-lg text-zinc-600 font-montserrat">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh
+        sollicitudin tempor, pellentesque at elementum quis.
+      </div>
+    </div>
+    <div class="m-auto">
+      <Image src={meetus} width={892} alt="descriptive text" />
+    </div>
+  </div>
+</div>
