@@ -6,7 +6,7 @@ import TutorIcon from "./icons/TutorIcon";
 
 const AboutUsGroup = () => {
   return (
-    <div className="">
+    <div className="font-montserrat ">
       <AboutUsBlurb
         title="Live and Remote Tutoring"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh sollicitudin tempor."
