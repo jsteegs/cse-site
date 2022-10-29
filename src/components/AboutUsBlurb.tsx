@@ -14,7 +14,7 @@ const AboutUsBlurb = ({ title, description, icon }: AboutUsBlurbPropTypes) => {
         <div className="font-gillsans font-bold text-xl text-stone-100 pb-3">
           {title}
         </div>
-        <div className="text-zinc-300 text-md font-montserrat">
+        <div className="text-zinc-300 text-md font-montserrat font-light">
           {description}
         </div>
       </div>
