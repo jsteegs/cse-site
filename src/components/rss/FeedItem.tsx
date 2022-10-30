@@ -9,10 +9,10 @@ import {
 
 const FeedItem = ({ item }: { item: RssItem }) => {
   return (
-    <div className="bg-stone-50 rounded flex-col mb-6 py-5 px-10 text-slate-700 text-md font-montserrat font-light max-w-2xl max-h-2xl">
-      <div className="flex min-w-0">
-        <div className="mr-5">
-          <div className="border-2 border-slate-700 rounded-full p-3 ">
+    <div className="bg-stone-50 rounded flex mb-6 py-5 px-10 text-slate-700 text-md font-montserrat font-light">
+      <div className="mb-3 flex">
+        <div className="mr-5 ">
+          <div className="border-2 border-slate-700 rounded-full p-3">
             <ArrowDownRightIcon
               className="fill-slate-700 h-7 w-7"
               fill="black"
@@ -21,17 +21,7 @@ const FeedItem = ({ item }: { item: RssItem }) => {
             />
           </div>
         </div>
-        <div className="text-ellipsis min-w-0 ">{item.title}</div>
-      </div>
-      <div className="flex">
-        <div className="relative">
-          <UserIcon className="h-5 w-5 fill-slate-700 inline" />
-          {item.author}
-        </div>
-        <div className="">
-          <CalendarIcon className="h-5 w-5 fill-slate-700 inline" />
-          {item.pubDate}
-        </div>
+        <div className=" line-clamp-2 h-fit">{item.title}</div>
       </div>
     </div>
   );

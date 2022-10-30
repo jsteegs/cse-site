@@ -1,7 +1,6 @@
 ---
-import AboutUsGroup from "./AboutUsGroup";
 import Feed from "./rss/Feed";
-import { XMLParser, XMLBuilder, XMLValidator } from "fast-xml-parser";
+import { XMLParser } from "fast-xml-parser";
 
 const response = await fetch(
   "https://plankton-app-nanep.ondigitalocean.app/feed/"
@@ -12,7 +11,7 @@ const jObj = new XMLParser().parse(data);
 
 <div class="bg-cse-navy text-stone-50">
   <div class="flex py-20">
-    <div class="flex flex-col pr-16 mr-1 basis-5/12">
+    <div class="flex flex-col pr-16 basis-5/12">
       <div class="text-4xl pb-6 font-bold leading-tight">
         What are we up to this time?
       </div>
@@ -21,10 +20,12 @@ const jObj = new XMLParser().parse(data);
         sollicitudin tempor, pellentesque at elementum quis.
       </div>
       <div class="">
-        <button class="btn bg-coyote-blue hover:bg-coyote-blue border-none mb-6"
+        <button
+          class="btn bg-coyote-blue hover:bg-coyote-blue border-none mb-6 block"
           >See more about us</button
         >
-        <button class="btn bg-coyote-blue hover:bg-coyote-blue border-none"
+        <button
+          class="btn bg-coyote-blue hover:bg-coyote-blue border-none block"
           >See more about us</button
         >
       </div>

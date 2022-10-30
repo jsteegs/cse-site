@@ -10,9 +10,9 @@ const Feed = (props: FeedProps) => {
   const items = props.items.slice(-4).reverse();
 
   return (
-    <div className="">
+    <div className="basis-8/12">
       {items.map((item) => {
-        return <FeedItem item={item} />;
+        return <FeedItem key={item.guid} item={item} />;
       })}
     </div>
   );
