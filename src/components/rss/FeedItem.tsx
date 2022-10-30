@@ -5,7 +5,7 @@ import {
   CalendarIcon,
   UserCircleIcon,
   UserIcon,
-} from "@heroicons/react/24/solid";
+} from "@heroicons/react/24/solid/esm/index.js";
 
 const FeedItem = ({ item }: { item: RssItem }) => {
   return (
