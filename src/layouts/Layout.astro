@@ -5,6 +5,9 @@ export interface Props {
 
 import "../styles/base.css";
 
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
 import "@fontsource/montserrat";
 import "@fontsource/montserrat/300.css";
 
@@ -21,6 +24,14 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="bg-cse-navy">
+    <div class="max-w-screen-xl mx-auto">
+      <Header />
+    </div>
     <slot />
+    <div class="bg-zinc-800">
+      <div class="max-w-screen-xl mx-auto">
+        <Footer />
+      </div>
+    </div>
   </body>
 </html>
