@@ -4,9 +4,9 @@ import sisterClubs from "../content/links/sisterclubs.json";
 ---
 
 <div
-  class="bg-zinc-800 flex font-montserrat font-light text-stone-500 py-24 text-base"
+  class="bg-zinc-800 flex flex-col xl:flex-row font-montserrat font-light text-stone-500 py-24 text-base px-3 xl:px-0"
 >
-  <div class="w-5/12 pr-28">
+  <div class="xl:w-5/12 pr-28 mb-8 text-sm xl:text-base">
     <div class="mb-6">Logo</div>
     <div class="mb-10">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh sollicitudin
@@ -14,32 +14,38 @@ import sisterClubs from "../content/links/sisterclubs.json";
     </div>
     <div class="">Copyright © 2022 Cal State San Bernardino</div>
   </div>
-  <div class="basis-3/12">
-    <div class="mb-10 text-stone-400">Quick links</div>
-    <div class="flex flex-col gap-3">
-      <div class="">Text</div>
-      <div class="">Text</div>
-      <div class="">Text</div>
-      <div class="">Text</div>
-      <div class="">Text</div>
-      <div class="">Text</div>
-      <div class="">Text</div>
+
+  <div class="basis-6/12 mb-8">
+    <div class="flex">
+      <div class="basis-6/12">
+        <div class="mb-10 text-stone-400">Quick links</div>
+        <div class="flex flex-col gap-3">
+          <div class="">Text</div>
+          <div class="">Text</div>
+          <div class="">Text</div>
+          <div class="">Text</div>
+          <div class="">Text</div>
+          <div class="">Text</div>
+          <div class="">Text</div>
+        </div>
+      </div>
+      <div class="basis-6/12">
+        <div class="mb-10 text-stone-400">Sister Clubs</div>
+        <div class="flex flex-col gap-3">
+          {
+            sisterClubs.sisters.map((sister) => {
+              return (
+                <div class="hover:underline">
+                  <a href={sister.link}>{sister.name}</a>
+                </div>
+              );
+            })
+          }
+        </div>
+      </div>
     </div>
   </div>
-  <div class="basis-3/12">
-    <div class="mb-10 text-stone-400">Sister Clubs</div>
-    <div class="flex flex-col gap-3">
-      {
-        sisterClubs.sisters.map((sister) => {
-          return (
-            <div class="hover:underline">
-              <a href={sister.link}>{sister.name}</a>
-            </div>
-          );
-        })
-      }
-    </div>
-  </div>
+
   <div class="basis-3/12">
     <div class="mb-10 text-stone-400">Social Media</div>
     <div class="">
