@@ -1,0 +1,9 @@
+{
+  "sisters": [
+    { "name": "CISO", "link": "https://ciso-csusb.org/" },
+    { "name": "WICyS", "link": "https://wicyscsusb.wixsite.com/website" },
+    { "name": "WiCSE", "link": "https://www.csusb.edu/cse/resources/wicse" },
+    { "name": "STEM", "link": "https://csusbstemclub.weebly.com/" },
+    { "name": "SAGES", "link": "https://linktr.ee/CSUSBSAGES" }
+  ]
+}

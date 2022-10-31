@@ -1,5 +1,8 @@
 ---
 import DiscordIcon from "./icons/DiscordIcon.astro";
+import sisterClubs from "../content/links/sisterclubs.json";
+
+console.log(sisterClubs.sisters);
 ---
 
 <div
@@ -28,13 +31,15 @@ import DiscordIcon from "./icons/DiscordIcon.astro";
   <div class="basis-3/12">
     <div class="mb-10 text-stone-400">Sister Clubs</div>
     <div class="flex flex-col gap-3">
-      <div class="">Text</div>
-      <div class="">Text</div>
-      <div class="">Text</div>
-      <div class="">Text</div>
-      <div class="">Text</div>
-      <div class="">Text</div>
-      <div class="">Text</div>
+      {
+        sisterClubs.sisters.map((sister) => {
+          return (
+            <div class="hover:underline">
+              <a href={sister.link}>{sister.name}</a>
+            </div>
+          );
+        })
+      }
     </div>
   </div>
   <div class="basis-3/12">
