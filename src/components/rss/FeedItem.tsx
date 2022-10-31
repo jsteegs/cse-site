@@ -10,9 +10,9 @@ import { format } from "date-fns";
 
 const FeedItem = ({ item }: { item: RssItem }) => {
   return (
-    <div className="bg-stone-50 rounded  mb-6 py-5 px-10 text-slate-700 text-md font-montserrat font-light">
-      <div className="mb-3 flex">
-        <div className="mr-5 ">
+    <div className="bg-stone-50 rounded mb-6 py-5 px-10 text-slate-700 text-md font-montserrat font-light">
+      <div className="mb-3 flex flex-col xl:flex-row">
+        <div className="xl:mr-5 mb-5 xl:mb-0 w-fit mx-auto">
           <div className="border-2 border-slate-700 rounded-full p-3">
             <ArrowDownRightIcon
               className="fill-slate-700 h-7 w-7"
@@ -22,7 +22,7 @@ const FeedItem = ({ item }: { item: RssItem }) => {
             />
           </div>
         </div>
-        <div className=" line-clamp-2 h-fit">{item.title}</div>
+        <div className="line-clamp-4 xl:line-clamp-2 h-fit">{item.title}</div>
       </div>
       <span>
         <span className="mr-5">
