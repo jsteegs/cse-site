@@ -3,7 +3,6 @@ import type { RssItem } from "./types";
 import {
   ArrowDownRightIcon,
   CalendarIcon,
-  UserCircleIcon,
   UserIcon,
 } from "@heroicons/react/24/solid/esm/index.js";
 import { format } from "date-fns";
