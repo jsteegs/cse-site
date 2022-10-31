@@ -10,17 +10,37 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-  <div class="flex justify-center">
-    <div class="max-w-screen-xl w-full">
+  <div class="">
+    <div class="max-w-screen-xl mx-auto">
       <Header />
       <div class="mx-24">
         <Hero />
-        <AboutUs />
-        <MeetUs />
-        <WhatAreWeUpTo />
-        <ReadyToJoin />
       </div>
-      <Footer />
+    </div>
+    <div class="bg-stone-100">
+      <div class="max-w-screen-xl mx-auto">
+        <div class="mx-24">
+          <AboutUs />
+          <MeetUs />
+        </div>
+      </div>
+    </div>
+    <div class="max-w-screen-xl mx-auto">
+      <div class="mx-24">
+        <WhatAreWeUpTo />
+      </div>
+    </div>
+    <div class="bg-stone-100">
+      <div class="max-w-screen-xl mx-auto">
+        <div class="mx-24">
+          <ReadyToJoin />
+        </div>
+      </div>
+    </div>
+    <div class="bg-zinc-800">
+      <div class="max-w-screen-xl mx-auto">
+        <Footer />
+      </div>
     </div>
   </div>
 </Layout>
