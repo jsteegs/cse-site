@@ -7,15 +7,15 @@ import { Bars3Icon } from "@heroicons/react/24/solid/esm/index.js";
 ---
 
 <header x-data="{ open: false }" class="bg-cse-navy">
-  <div class="flex px-3 xl:px-0">
-    <div class="w-1/4 xl:w-auto">
+  <div class="flex px-3 md:px-0">
+    <div class="w-1/4 md:w-auto">
       <Image src={logo} alt="descriptive text" />
     </div>
 
     <div
       class="ml-auto flex gap-6 text-stone-50 items-center font-montserrat font-light text-sm"
     >
-      <div class="hidden xl:flex gap-6">
+      <div class="hidden md:flex gap-6">
         <a>About us</a>
         <a>Archive</a>
         <a>Events</a>
@@ -23,20 +23,20 @@ import { Bars3Icon } from "@heroicons/react/24/solid/esm/index.js";
         <a>Announcements</a>
       </div>
 
-      <div x-on:click="open = !open" class="xl:hidden">
+      <div x-on:click="open = !open" class="md:hidden">
         <Bars3Icon className="h-7 w-7 inline mr-2" />
       </div>
 
       <button class="btn bg-[#5865F2] hover:bg-[#5865F2] text-stone-50 gap-2">
         <DiscordIcon classes="h-6 w-6 fill-white" />
-        <span class="hidden xl:inline">Join us on Discord</span>
+        <span class="hidden lg:inline">Join us on Discord</span>
       </button>
     </div>
   </div>
 
   <div
     x-bind:class="{'flex': open, 'hidden': !open}"
-    class="xl:hidden flex-col gap-1 px-3 p-4 mb-4 bg-slate-800"
+    class="md:hidden flex-col gap-1 px-3 p-4 mb-4 bg-slate-800"
   >
     <div class=""><button class="btn btn-block btn-ghost">block</button></div>
     <div class=""><button class="btn btn-block btn-ghost">block</button></div>
