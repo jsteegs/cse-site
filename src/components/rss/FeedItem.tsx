@@ -9,7 +9,7 @@ import { format } from "date-fns";
 
 const FeedItem = ({ item }: { item: RssItem }) => {
   return (
-    <div className="bg-stone-50 rounded mb-6 py-5 px-10 text-slate-700 text-md font-montserrat font-light text-base md:text-sm xl:text-base">
+    <div className="bg-stone-50 rounded mb-6 py-3 xl:py-5 px-7 xl:px-10 text-slate-700 text-md font-montserrat font-light text-base md:text-sm xl:text-base">
       <div className="mb-3 flex flex-col md:flex-row">
         <div className="md:mr-5 mb-5 md:mb-0 w-fit mx-auto">
           <div className="border-2 border-slate-700 rounded-full p-3">
