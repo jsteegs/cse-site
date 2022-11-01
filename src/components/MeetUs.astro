@@ -1,6 +1,8 @@
 ---
 import { Image } from "@astrojs/image/components";
 import meetus from "../assets/meetus.png";
+import blurb from "../content/index/blurb.json"
+
 ---
 
 <div class="bg-stone-100">
@@ -14,8 +16,7 @@ import meetus from "../assets/meetus.png";
       <div
         class="text-base md:text-lg xl:text-xl text-zinc-600 font-montserrat font-light"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh
-        sollicitudin tempor, pellentesque at elementum quis.
+        {blurb.meetThePack}
       </div>
     </div>
     <div class="m-auto">

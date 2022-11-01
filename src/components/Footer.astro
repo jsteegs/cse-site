@@ -1,6 +1,8 @@
 ---
 import DiscordIcon from "./icons/DiscordIcon.astro";
 import sisterClubs from "../content/links/sisterclubs.json";
+import blurb from "../content/footer/blurb.json"
+
 ---
 
 <div
@@ -9,8 +11,7 @@ import sisterClubs from "../content/links/sisterclubs.json";
   <div class="md:w-5/12 pr-28 mb-14 text-sm xl:text-base">
     <div class="mb-6">Logo</div>
     <div class="mb-10">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh sollicitudin
-      tempor, pellentesque at elementum quis.
+      {blurb.footer}
     </div>
     <div class="">Copyright © 2022 Cal State San Bernardino</div>
   </div>

@@ -1,6 +1,8 @@
 ---
 import Feed from "./rss/Feed";
 import { XMLParser } from "fast-xml-parser";
+import blurb from "../content/index/blurb.json"
+
 
 const response = await fetch(
   "https://plankton-app-nanep.ondigitalocean.app/feed/"
@@ -20,8 +22,7 @@ const jObj = new XMLParser().parse(data);
       <div
         class="text-base xl:text-xl pb-8 text-slate-300 font-montserrat font-light"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh
-        sollicitudin tempor, pellentesque at elementum quis.
+        {blurb.whatAreWeUpToThisTime}
       </div>
       <div class="">
         <button

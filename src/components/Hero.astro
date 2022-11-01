@@ -1,6 +1,7 @@
 ---
 import { Image } from "@astrojs/image/components";
 import hero from "../assets/hero.png";
+import blurb from "../content/index/blurb.json"
 ---
 
 <div class="bg-cse-navy">
@@ -17,8 +18,7 @@ import hero from "../assets/hero.png";
       <div
         class="text-slate-300 text-base md:text-lg xl:text-xl font-montserrat pb-8 font-light"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh
-        sollicitudin tempor, pellentesque at elementum quis.
+        {blurb.onTheCoyoteEdgeOfTechnologyAndEngineering}
       </div>
       <div class="mx-auto md:mx-0">
         <button class="btn bg-coyote-blue hover:bg-coyote-blue border-none"
@@ -31,7 +31,6 @@ import hero from "../assets/hero.png";
     >
       <Image
         src={hero}
-        format="webp"
         class="min-w-[70%]"
         alt="descriptive text"
       />
