@@ -9,3 +9,11 @@
     font-style: normal;
     font-display: swap;
   }
+
+  @font-face {
+    font-family: 'Gill Sans';
+    src: url('/Gill-Sans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
