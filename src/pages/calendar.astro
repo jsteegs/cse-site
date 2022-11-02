@@ -1,0 +1,27 @@
+---
+import MyCalendar from "../components/MyCalendar";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="CSE - CSUSB">
+  <div class="md:max-w-screen-xl mx-auto">
+    <div class="md:mx-8 xl:mx-24">
+      <div class="flex flex-col mx-auto center text-center pt-20 pb-14">
+        <div class="px-16 mb-12">
+          <div
+            class="text-2xl md:text-3xl xl:text-4xl pb-8 text-stone-50 font-bold leading-tight"
+          >
+            Events
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-stone-100">
+    <div class="xl:max-w-screen-xl mx-auto">
+      <div class="mx-3 py-24 xl:mx-8">
+        <MyCalendar client:only="react" />
+      </div>
+    </div>
+  </div>
+</Layout>
