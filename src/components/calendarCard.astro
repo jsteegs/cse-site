@@ -1,0 +1,16 @@
+---
+import { format } from "date-fns";
+
+const { title, start, body } = Astro.props;
+const formattedDate = format(start, "MMMM dd y | h:mm a");
+---
+
+<div class="bg-slate-200 flex w-full rounded font-montserrat mb-4">
+  <div class="flex flex-col px-3 py-4">
+    <div class="font-medium mb-1">{title}</div>
+    <div class="font-light mb-3">{formattedDate}</div>
+    <div class="font-light text-sm line-clamp-3">
+      {body}
+    </div>
+  </div>
+</div>
