@@ -9,18 +9,20 @@ import { Bars3Icon } from "@heroicons/react/24/solid/esm/index.js";
 <header x-data="{ open: false }" class="bg-cse-navy">
   <div class="flex px-3 xl:px-0">
     <div class="w-1/4 md:w-auto">
-      <Image src={logo} alt="descriptive text" />
+      <a href="/">
+        <Image src={logo} alt="descriptive text" />
+      </a>
     </div>
 
     <div
       class="ml-auto flex gap-6 text-stone-50 items-center font-montserrat font-light text-sm"
     >
       <div class="hidden md:flex gap-6">
-        <a>About us</a>
-        <a>Archive</a>
-        <a>Events</a>
-        <a>Contact</a>
-        <a>Announcements</a>
+        <a class="hover:underline">About us</a>
+        <a class="hover:underline">Archive</a>
+        <a href="/calendar/" class="hover:underline">Events</a>
+        <a class="hover:underline">Contact</a>
+        <a class="hover:underline">Announcements</a>
       </div>
 
       <div x-on:click="open = !open" class="md:hidden">
@@ -38,7 +40,11 @@ import { Bars3Icon } from "@heroicons/react/24/solid/esm/index.js";
     x-bind:class="{'flex': open, 'hidden': !open}"
     class="md:hidden flex-col gap-1 px-3 p-4 mb-4 bg-slate-800 text-stone-100"
   >
-    <div class=""><button class="btn btn-block btn-ghost">block</button></div>
+    <div class="">
+      <button class="btn btn-block btn-ghost"
+        ><a href="/calendar">Events</a>
+      </button>
+    </div>
     <div class=""><button class="btn btn-block btn-ghost">block</button></div>
     <div class=""><button class="btn btn-block btn-ghost">block</button></div>
     <div class=""><button class="btn btn-block btn-ghost">block</button></div>
