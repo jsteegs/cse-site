@@ -2,7 +2,22 @@
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   daisyui: {
-    themes: false,
+    themes: [
+      {
+        mytheme: {
+          primary: "#005eb8",
+          secondary: "#c748ea",
+          accent: "#8eedaf",
+          neutral: "#17161D",
+          "base-100": "#101329",
+          info: "#5865F2",
+          success: "#60E1A5",
+          warning: "#FCDC69",
+          error: "#EA3A1F",
+          "base-content": "#FAFAF9",
+        },
+      },
+    ],
   },
   theme: {
     extend: {

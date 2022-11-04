@@ -1,24 +1,20 @@
 ---
-import blurb from "../content/index/blurb.json"
-
+import blurb from "../content/index/blurb.json";
+import H1Text from "./H1Text.astro";
 ---
 
 <div class="bg-stone-100 pt-12">
   <div class="flex flex-col mx-auto center text-center pt-8 pb-14">
     <div class="px-16 mb-12">
-      <div
-        class="text-2xl md:text-3xl xl:text-4xl pb-8 text-slate-800 font-bold leading-tight"
-      >
+      <H1Text>
         Ready to run with the <span class="text-coyote-blue">Pack?</span>
-      </div>
+      </H1Text>
       <div
         class="text-base xl:text-lg text-zinc-600 font-montserrat font-light md:px-24 xl:px-0 pb-12"
       >
         {blurb.readyToRunWithThePack}
       </div>
-      <button class="btn bg-coyote-blue hover:bg-coyote-blue border-none"
-        >See more about us</button
-      >
+      <button class="btn btn-primary">See more about us</button>
     </div>
   </div>
 </div>

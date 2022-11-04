@@ -2,34 +2,29 @@
 import { Image } from "@astrojs/image/components";
 import hero from "../assets/hero.png";
 import blurb from "../content/index/blurb.json";
+import H1Text from "./H1Text.astro";
 ---
 
-<div class="bg-cse-navy">
-  <div class="flex flex-col-reverse md:flex-row pb-16">
+<div class="flex flex-col-reverse md:flex-row pb-16">
+  <div
+    class="flex flex-col justify-center animate-in slide-in-from-bottom-2.5 fade-in fill-mode-both duration-1000 delay-700"
+  >
+    <H1Text light>
+      On the <span class="text-coyote-blue">Coyote</span> edge of technology and
+      engineering
+    </H1Text>
     <div
-      class="flex flex-col justify-center animate-in slide-in-from-bottom-2.5 fade-in fill-mode-both duration-1000 delay-700"
+      class="text-slate-300 text-base md:text-lg xl:text-xl font-montserrat pb-8 font-light"
     >
-      <div
-        class="text-stone-50 text-2xl md:text-3xl xl:text-4xl font-gillsans pb-6 font-bold"
-      >
-        On the <span class="text-coyote-blue">Coyote</span> edge of technology and
-        engineering
-      </div>
-      <div
-        class="text-slate-300 text-base md:text-lg xl:text-xl font-montserrat pb-8 font-light"
-      >
-        {blurb.onTheCoyoteEdgeOfTechnologyAndEngineering}
-      </div>
-      <div class="mx-auto md:mx-0">
-        <button class="btn bg-coyote-blue hover:bg-coyote-blue border-none"
-          >See more about us</button
-        >
-      </div>
+      {blurb.onTheCoyoteEdgeOfTechnologyAndEngineering}
     </div>
-    <div
-      class="w-3/4 mx-auto md:mx-0 md:w-full animate-in slide-in-from-bottom-2.5 fade-in duration-700"
-    >
-      <Image src={hero} class="min-w-[70%]" alt="descriptive text" />
+    <div class="mx-auto md:mx-0">
+      <button class="btn btn-primary">See more about us</button>
     </div>
+  </div>
+  <div
+    class="w-3/4 mx-auto md:mx-0 md:w-full animate-in slide-in-from-bottom-2.5 fade-in duration-700"
+  >
+    <Image src={hero} class="min-w-[70%]" alt="descriptive text" />
   </div>
 </div>

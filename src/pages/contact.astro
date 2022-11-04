@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import SiteWidth from "../components/SiteWidth.astro";
+import H1Text from "../components/H1Text.astro";
 ---
 
 <Layout title="contact">
@@ -8,11 +9,7 @@ import SiteWidth from "../components/SiteWidth.astro";
     <div class="mt-10 mb-14">
       <div class="flex flex-col lg:flex-row">
         <div class="flex flex-col lg:w-1/2 lg:mr-auto">
-          <div
-            class="text-2xl md:text-3xl xl:text-4xl pb-10 text-stone-50 font-bold leading-tight"
-          >
-            Contact us
-          </div>
+          <H1Text light>Contact us</H1Text>
           <div
             class="text-slate-300 text-base md:text-lg xl:text-xl font-montserrat pb-8 font-light"
           >
@@ -59,11 +56,7 @@ import SiteWidth from "../components/SiteWidth.astro";
               placeholder="Type here"
               required></textarea>
             <div data-netlify-recaptcha="true" class="mb-5"></div>
-            <input
-              class="btn bg-coyote-blue hover:bg-coyote-blue border-none"
-              type="submit"
-              value="Submit"
-            />
+            <input class="btn btn-primary" type="submit" value="Submit" />
           </form>
         </div>
       </div>
