@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import CalendarCard from "../components/calendarCard.astro";
+import SiteWidth from "../components/SiteWidth.astro";
 
 const response = await fetch(
   "https://plankton-app-nanep.ondigitalocean.app/events"
@@ -26,29 +27,27 @@ const pastDates = dataWithDates.filter(
 ---
 
 <Layout title="CSE - CSUSB">
-  <div class="md:max-w-screen-xl mx-auto">
-    <div class="mx-4 md:mx-8 xl:mx-24">
-      <div class="mt-10 mb-14">
-        <div
-          class="text-stone-50 text-2xl md:text-3xl xl:text-4xl font-gillsans pb-6 font-bold"
-        >
-          Events
-        </div>
-        {futureDates.map((d: any) => <CalendarCard {...d} />)}
+  <SiteWidth>
+    <div class="mt-10 mb-14">
+      <div
+        class="text-stone-50 text-2xl md:text-3xl xl:text-4xl font-gillsans pb-6 font-bold"
+      >
+        Events
       </div>
-      <div class="mb-12">
-        <div
-          class="text-stone-50 text-2xl md:text-3xl xl:text-4xl font-gillsans pb-6 font-bold"
-        >
-          Past Events
-        </div>
-
-        {pastDates.map((d: any) => <CalendarCard {...d} />)}
-      </div>
-
-      <button class="btn btn-ghost text-stone-50 mx-auto block mb-8"
-        ><a href="">See Archive</a>
-      </button>
+      {futureDates.map((d: any) => <CalendarCard {...d} />)}
     </div>
-  </div>
+    <div class="mb-12">
+      <div
+        class="text-stone-50 text-2xl md:text-3xl xl:text-4xl font-gillsans pb-6 font-bold"
+      >
+        Past Events
+      </div>
+
+      {pastDates.map((d: any) => <CalendarCard {...d} />)}
+    </div>
+
+    <button class="btn btn-ghost text-stone-50 mx-auto block mb-8"
+      ><a href="">See Archive</a>
+    </button>
+  </SiteWidth>
 </Layout>

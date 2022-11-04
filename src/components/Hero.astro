@@ -1,11 +1,11 @@
 ---
 import { Image } from "@astrojs/image/components";
 import hero from "../assets/hero.png";
-import blurb from "../content/index/blurb.json"
+import blurb from "../content/index/blurb.json";
 ---
 
 <div class="bg-cse-navy">
-  <div class="flex flex-col-reverse mx-5 md:mx-0 md:flex-row pb-16">
+  <div class="flex flex-col-reverse md:flex-row pb-16">
     <div
       class="flex flex-col justify-center animate-in slide-in-from-bottom-2.5 fade-in fill-mode-both duration-1000 delay-700"
     >
@@ -29,11 +29,7 @@ import blurb from "../content/index/blurb.json"
     <div
       class="w-3/4 mx-auto md:mx-0 md:w-full animate-in slide-in-from-bottom-2.5 fade-in duration-700"
     >
-      <Image
-        src={hero}
-        class="min-w-[70%]"
-        alt="descriptive text"
-      />
+      <Image src={hero} class="min-w-[70%]" alt="descriptive text" />
     </div>
   </div>
 </div>

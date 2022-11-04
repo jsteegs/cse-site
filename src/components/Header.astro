@@ -19,7 +19,7 @@ import { Bars3Icon } from "@heroicons/react/24/solid/esm/index.js";
     >
       <div class="hidden md:flex gap-6">
         <a class="hover:underline">About us</a>
-        <a class="hover:underline">Archive</a>
+        <a href="/archive/" class="hover:underline">Archive</a>
         <a href="/calendar/" class="hover:underline">Events</a>
         <a href="/contact/" class="hover:underline">Contact</a>
         <a class="hover:underline">Announcements</a>
@@ -41,12 +41,20 @@ import { Bars3Icon } from "@heroicons/react/24/solid/esm/index.js";
     class="md:hidden flex-col gap-1 px-3 p-4 mb-4 bg-slate-800 text-stone-100"
   >
     <div class="">
-      <button class="btn btn-block btn-ghost"
-        ><a href="/calendar">Events</a>
-      </button>
+      <a href="/calendar"
+        ><button class="btn btn-block btn-ghost">Events</button>
+      </a>
     </div>
-    <div class=""><button class="btn btn-block btn-ghost">block</button></div>
-    <div class=""><button class="btn btn-block btn-ghost">block</button></div>
+    <div class="">
+      <a href="/contact"
+        ><button class="btn btn-block btn-ghost">Contact</button>
+      </a>
+    </div>
+    <div class="">
+      <a href="/archive"
+        ><button class="btn btn-block btn-ghost">Archive</button>
+      </a>
+    </div>
     <div class=""><button class="btn btn-block btn-ghost">block</button></div>
     <div class=""><button class="btn btn-block btn-ghost">block</button></div>
   </div>
