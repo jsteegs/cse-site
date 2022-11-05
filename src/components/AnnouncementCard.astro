@@ -1,0 +1,34 @@
+---
+import {
+  ArrowDownRightIcon,
+  CalendarIcon,
+  UserIcon,
+} from "@heroicons/react/24/solid/esm/index.js";
+import { log } from "astro/dist/core/logger/core";
+import { format } from "date-fns";
+
+const { item } = Astro.props;
+---
+
+<div
+  class="bg-stone-50 rounded mb-6 py-5 px-7 xl:px-10 text-slate-700 text-md font-montserrat text-base md:text-sm xl:text-base"
+>
+  <div class="mb-3 flex flex-col md:flex-row">
+    <div class="md:mr-5 hidden md:block mb-5 md:mb-0 w-fit mr-auto">
+      <div class="border-2 border-slate-700 rounded-full p-3">
+        <ArrowDownRightIcon className="fill-slate-700 h-7 w-7" fill="black" />
+      </div>
+    </div>
+    <div class="h-fit text-base">{item.title}</div>
+  </div>
+  <span>
+    <span class="mr-5">
+      <UserIcon className="h-5 w-5 inline mr-2" />
+      {item.author}
+    </span>
+    <span>
+      <CalendarIcon className="h-5 w-5 inline mr-2" />
+      {format(new Date(item.pubDate), "MM/dd/yyyy")}
+    </span>
+  </span>
+</div>
