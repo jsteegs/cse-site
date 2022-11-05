@@ -13,7 +13,6 @@ const data = await response.text();
 const jObj = new XMLParser().parse(data);
 
 const items = jObj.rss.channel.item.reverse();
-console.log(items);
 ---
 
 <Layout title="archive">
