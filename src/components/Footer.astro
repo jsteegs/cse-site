@@ -20,13 +20,15 @@ import blurb from "../content/footer/blurb.json";
       <div class="basis-6/12">
         <div class="mb-10 text-stone-400">Quick links</div>
         <div class="flex flex-col gap-3">
-          <div class="">Text</div>
-          <div class="">Text</div>
-          <div class="">Text</div>
-          <div class="">Text</div>
-          <div class="">Text</div>
-          <div class="">Text</div>
-          <div class="">Text</div>
+          <a href="/" class="hover:underline w-fit">Homepage</a>
+
+          <a href="/about/" class="hover:underline w-fit">About us</a>
+          <a href="/announcements/" class="hover:underline w-fit"
+            >Announcements</a
+          >
+          <a href="/calendar/" class="hover:underline w-fit">Events</a>
+          <a href="/contact/" class="hover:underline w-fit">Contact</a>
+          <a href="/archive/" class="hover:underline w-fit">Archive</a>
         </div>
       </div>
       <div class="basis-6/12">
@@ -35,8 +37,10 @@ import blurb from "../content/footer/blurb.json";
           {
             sisterClubs.sisters.map((sister) => {
               return (
-                <div class="hover:underline">
-                  <a href={sister.link}>{sister.name}</a>
+                <div class="">
+                  <a class="hover:underline" href={sister.link}>
+                    {sister.name}
+                  </a>
                 </div>
               );
             })

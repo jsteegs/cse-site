@@ -19,10 +19,10 @@ import { Bars3Icon } from "@heroicons/react/24/solid/esm/index.js";
     >
       <div class="hidden md:flex gap-6">
         <a href="/about/" class="hover:underline">About us</a>
-        <a href="/archive/" class="hover:underline">Archive</a>
+        <a href="/announcements/" class="hover:underline">Announcements</a>
         <a href="/calendar/" class="hover:underline">Events</a>
         <a href="/contact/" class="hover:underline">Contact</a>
-        <a class="hover:underline">Announcements</a>
+        <a href="/archive/" class="hover:underline">Archive</a>
       </div>
 
       <div x-on:click="open = !open" class="md:hidden">
@@ -41,25 +41,29 @@ import { Bars3Icon } from "@heroicons/react/24/solid/esm/index.js";
     class="md:hidden flex-col gap-1 px-3 p-4 mb-4 bg-slate-800 text-stone-100"
   >
     <div class="">
-      <a href="/calendar"
+      <a href="/about/"
+        ><button class="btn btn-block btn-ghost">About</button>
+      </a>
+    </div>
+    <div class="">
+      <a href="/announcements/"
+        ><button class="btn btn-block btn-ghost">Announcements</button>
+      </a>
+    </div>
+    <div class="">
+      <a href="/calendar/"
         ><button class="btn btn-block btn-ghost">Events</button>
       </a>
     </div>
     <div class="">
-      <a href="/contact"
+      <a href="/contact/"
         ><button class="btn btn-block btn-ghost">Contact</button>
       </a>
     </div>
     <div class="">
-      <a href="/archive"
+      <a href="/archive/"
         ><button class="btn btn-block btn-ghost">Archive</button>
       </a>
     </div>
-    <div class="">
-      <a href="/about"
-        ><button class="btn btn-block btn-ghost">About</button>
-      </a>
-    </div>
-    <div class=""><button class="btn btn-block btn-ghost">block</button></div>
   </div>
 </header>
