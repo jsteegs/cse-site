@@ -23,7 +23,8 @@ module.exports = {
     extend: {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
-        gillsans: ["Gill Sans", "sans-serif"],
+        gillsans: ["Gill Sans", "Cabin", "sans-serif"],
+        cabin: ["Cabin", "sans-serif"],
       },
       colors: {
         "coyote-blue": "#005EB8",

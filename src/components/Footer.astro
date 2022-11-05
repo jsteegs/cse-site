@@ -2,6 +2,8 @@
 import DiscordIcon from "./icons/DiscordIcon.astro";
 import sisterClubs from "../content/links/sisterclubs.json";
 import blurb from "../content/footer/blurb.json";
+
+import links from "../content/links/social.json";
 ---
 
 <div
@@ -53,10 +55,12 @@ import blurb from "../content/footer/blurb.json";
   <div class="basis-3/12">
     <div class="mb-10 text-stone-400">Social Media</div>
     <div class="">
-      <button class="btn btn-info gap-2">
-        <DiscordIcon classes="h-6 w-6 fill-white" />
-        <span class="md:hidden xl:inline xs:inline">Join us on</span> Discord
-      </button>
+      <a href={links.discord}>
+        <button class="btn btn-info gap-2">
+          <DiscordIcon classes="h-6 w-6 fill-white" />
+          <span class="md:hidden xl:inline xs:inline">Join us on</span> Discord
+        </button>
+      </a>
       <div class=""></div>
     </div>
   </div>

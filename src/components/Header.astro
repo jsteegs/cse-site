@@ -2,6 +2,7 @@
 import { Image } from "@astrojs/image/components";
 import logo from "../assets/logo.png";
 import DiscordIcon from "./icons/DiscordIcon.astro";
+import links from "../content/links/social.json";
 
 import { Bars3Icon } from "@heroicons/react/24/solid/esm/index.js";
 ---
@@ -28,11 +29,12 @@ import { Bars3Icon } from "@heroicons/react/24/solid/esm/index.js";
       <div x-on:click="open = !open" class="md:hidden">
         <Bars3Icon className="h-7 w-7 inline mr-2" />
       </div>
-
-      <button class="btn btn-info gap-2">
-        <DiscordIcon classes="h-6 w-6 fill-white" />
-        <span class="hidden lg:inline">Join us on Discord</span>
-      </button>
+      <a href={links.discord}>
+        <button class="btn btn-info gap-2">
+          <DiscordIcon classes="h-6 w-6 fill-white" />
+          <span class="hidden lg:inline">Join us on Discord</span>
+        </button>
+      </a>
     </div>
   </div>
 
