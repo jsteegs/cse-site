@@ -1,0 +1,20 @@
+---
+import type { RssItem } from "./types";
+
+import FeedItem from "./FeedItem.astro";
+
+interface Props {
+  items: RssItem[];
+}
+
+const { items } = Astro.props;
+const slicedItems = items.slice(-4).reverse();
+---
+
+<div class="basis-8/12">
+  {
+    slicedItems.map((item) => {
+      return <FeedItem item={item} />;
+    })
+  }
+</div>
