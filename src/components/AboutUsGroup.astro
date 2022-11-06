@@ -1,0 +1,26 @@
+---
+import AboutUsBlurb from "./AboutUsBlurb.astro";
+import blurb from "../content/index/blurb.json";
+import TutorIcon from "./icons/TutorIcon.astro";
+import RobotArmIcon from "./icons/RobotArmIcon.astro";
+import ComputerIcon from "./icons/ComputerIcon.astro";
+---
+
+<div class="font-montserrat">
+  <AboutUsBlurb
+    title="Live and Remote Tutoring"
+    description={blurb.seeWhatPutsYotesLightYearsAhead.liveAndRemoteTutoring}
+    icon={TutorIcon}
+  />
+  <AboutUsBlurb
+    title="Workshops, Speakers, and Tours"
+    description={blurb.seeWhatPutsYotesLightYearsAhead
+      .workshopsSpeakersAndTours}
+    icon={RobotArmIcon}
+  />
+  <AboutUsBlurb
+    title="State of the Art Hardware"
+    description={blurb.seeWhatPutsYotesLightYearsAhead.stateOfTheArtHardware}
+    icon={ComputerIcon}
+  />
+</div>

@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.19.6",
+    "@tailwindcss/line-clamp": "^0.4.2",
     "babel-loader": "^8.2.5",
     "daisyui": "^2.37.0",
     "tailwindcss-animate": "^1.0.5"
