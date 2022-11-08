@@ -2,6 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import SiteWidth from "../components/SiteWidth.astro";
 
+import { archive } from "../content/archive/archive.json";
+
 const data = [{ title: "lorem ipsum", date: "1/12/22", url: "example.com" }];
 ---
 
@@ -35,15 +37,17 @@ const data = [{ title: "lorem ipsum", date: "1/12/22", url: "example.com" }];
           </thead>
           <tbody>
             {
-              data.map((d: any) => {
+              archive.map((d: any) => {
                 return (
                   <tr>
                     <td>{d.date}</td>
                     <td>{d.title}</td>
                     <td>
-                      <a href={d.url} class="text-slate-900 hover:underline">
-                        URL
-                      </a>
+                      {d.url && (
+                        <a href={d.url} class="hover:underline">
+                          URL
+                        </a>
+                      )}
                     </td>
                   </tr>
                 );
