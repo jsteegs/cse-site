@@ -35,7 +35,7 @@ import { archive } from "../content/archive/archive.json";
           </thead>
           <tbody>
             {
-              archive.map((d: any) => {
+              archive.reverse().map((d: any) => {
                 return (
                   <tr>
                     <td>{d.date}</td>
