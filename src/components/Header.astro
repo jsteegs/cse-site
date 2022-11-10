@@ -7,11 +7,16 @@ import links from "../content/links/social.json";
 import { Bars3Icon } from "@heroicons/react/24/solid/esm/index.js";
 ---
 
-<header x-data="{ open: false }" class="bg-cse-navy">
+<header x-data="{ open: false }" class="bg-cse-navy my-7">
   <div class="flex px-3 xl:px-0">
     <div class="w-1/4 md:w-auto">
       <a href="/">
-        <Image src={logo} alt="descriptive text" />
+        <Image
+          src={logo}
+          height={100}
+          alt="descriptive text"
+          class={"m-auto"}
+        />
       </a>
     </div>
 

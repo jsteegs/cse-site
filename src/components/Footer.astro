@@ -2,7 +2,8 @@
 import DiscordIcon from "./icons/DiscordIcon.astro";
 import sisterClubs from "../content/links/sisterclubs.json";
 import blurb from "../content/footer/blurb.json";
-
+import { Image } from "@astrojs/image/components";
+import logo from "../assets/logo.png";
 import links from "../content/links/social.json";
 ---
 
@@ -10,7 +11,9 @@ import links from "../content/links/social.json";
   class="bg-zinc-800 flex flex-col md:flex-row font-montserrat font-light text-stone-500 py-20 xl:py-24 text-base px-3 xl:px-0"
 >
   <div class="md:w-5/12 pr-28 mb-14 md:mb-0 text-sm xl:text-base">
-    <div class="mb-6">Logo</div>
+    <div class="mb-6">
+      <Image src={logo} height={80} alt="descriptive text" />
+    </div>
     <div class="mb-10">
       {blurb.footer}
     </div>

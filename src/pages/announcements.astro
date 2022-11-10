@@ -12,10 +12,10 @@ const response = await fetch(
 const data = await response.text();
 const jObj = new XMLParser().parse(data);
 
-const items = jObj.rss.channel.item.reverse();
+const items = jObj.rss.channel.item;
 ---
 
-<Layout title="archive">
+<Layout title="CSE - Announcements">
   <SiteWidth>
     <div class="my-12">
       <H1Text light>Announcements</H1Text>
