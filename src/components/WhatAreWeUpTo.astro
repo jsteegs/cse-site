@@ -21,8 +21,14 @@ const jObj = new XMLParser().parse(data);
         {blurb.whatAreWeUpToThisTime}
       </div>
       <div class="">
-        <button class="btn btn-primary mb-6 block">See more about us</button>
-        <button class="btn btn-primary block">See more about us</button>
+        <a href="/calendar"
+          ><button class="btn btn-primary mb-6 block"
+            >See upcoming events</button
+          >
+        </a>
+        <a href="/announcements"
+          ><button class="btn btn-primary block">Read announcements</button>
+        </a>
       </div>
     </div>
     <Feed items={jObj.rss.channel.item} />

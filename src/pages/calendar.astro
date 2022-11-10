@@ -46,8 +46,10 @@ const pastDates = dataWithDates.filter(
       {pastDates.map((d: any) => <CalendarCard {...d} />)}
     </div>
 
-    <button class="btn btn-ghost text-stone-50 mx-auto block mb-8"
-      ><a href="">See Archive</a>
-    </button>
+    <a href="/archive">
+      <button class="btn btn-ghost text-stone-50 mx-auto block mb-8"
+        >See Archive
+      </button>
+    </a>
   </SiteWidth>
 </Layout>
