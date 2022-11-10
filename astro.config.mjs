@@ -10,9 +10,15 @@ import alpinejs from "@astrojs/alpinejs";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), tailwind({
-    config: {
-      applyBaseStyles: false
-    }
-  }), image(), alpinejs()]
+  site: "https://csusb.dev",
+  integrations: [
+    react(),
+    tailwind({
+      config: {
+        applyBaseStyles: false,
+      },
+    }),
+    image(),
+    alpinejs(),
+  ],
 });
