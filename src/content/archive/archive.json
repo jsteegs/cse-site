@@ -1,10 +1,10 @@
 {
   "archive": [
-    { "title": "Meeting 1: Node.js", "date": "1/12/22" },
-    { "title": "Meeting 2: React", "date": "1/12/22" },
+    { "title": "Meeting 1: Node.js", "date": "09/02/2022" },
+    { "title": "Meeting 2: React", "date": "09/30/2022" },
     {
       "title": "Meeting 3: Git and Github",
-      "date": "1/12/22",
+      "date": "10/14/2022",
       "url": "https://youtu.be/3E08pFV7w5Y"
     }
   ]

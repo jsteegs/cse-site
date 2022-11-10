@@ -18,14 +18,9 @@ const { item } = Astro.props;
   class="bg-stone-50 rounded mb-6 py-5 px-7 xl:px-10 text-slate-700 text-md font-montserrat font-light text-base md:text-sm xl:text-base"
 >
   <div class="mb-3 flex flex-col md:flex-row">
-    <div class="md:mr-5 mb-5 md:mb-0 w-fit mx-auto">
+    <div class="md:mr-5 hidden md:block mb-5 md:mb-0 w-fit mr-auto">
       <div class="border-2 border-slate-700 rounded-full p-3">
-        <ArrowDownRightIcon
-          className="fill-slate-700 h-7 w-7"
-          fill="black"
-          height={5}
-          width={5}
-        />
+        <ArrowDownRightIcon className="fill-slate-700 h-7 w-7" fill="black" />
       </div>
     </div>
     <div class="line-clamp-4 md:line-clamp-2 h-fit">{item.title}</div>
