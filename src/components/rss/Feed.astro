@@ -10,7 +10,7 @@ const data = await response.text();
 const jObj = new XMLParser().parse(data);
 const items = jObj.rss.channel.item;
 
-let slicedItems = items.slice(-4);
+let slicedItems = items.slice(4);
 ---
 
 <div class="basis-8/12">
