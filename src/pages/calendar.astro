@@ -34,7 +34,7 @@ const pastDates = dataWithDates.filter(
       >
         Events
       </div>
-      {futureDates.reverse().map((d: any) => <CalendarCard {...d} />)}
+      {futureDates.map((d: any) => <CalendarCard {...d} />)}
     </div>
     <div class="mb-12">
       <div
@@ -43,7 +43,7 @@ const pastDates = dataWithDates.filter(
         Past Events
       </div>
 
-      {pastDates.reverse().map((d: any) => <CalendarCard {...d} />)}
+      {pastDates.map((d: any) => <CalendarCard {...d} />)}
     </div>
 
     <a href="/archive">
