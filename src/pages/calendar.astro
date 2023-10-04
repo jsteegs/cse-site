@@ -3,32 +3,32 @@ import Layout from "../layouts/Layout.astro";
 import CalendarCard from "../components/calendarCard.astro";
 import SiteWidth from "../components/SiteWidth.astro";
 
-const response = await fetch(
-  "https://plankton-app-nanep.ondigitalocean.app/events"
-);
+// const response = await fetch(
+//   "https://plankton-app-nanep.ondigitalocean.app/events"
+// );
 
-const data = await response.json();
+// const data = await response.json();
 
-const dataWithDates = data.map((d: any) => {
-  return { ...d, start: new Date(d.start), end: new Date(d.end) };
-});
+// const dataWithDates = data.map((d: any) => {
+//   return { ...d, start: new Date(d.start), end: new Date(d.end) };
+// });
 
-dataWithDates.sort((a: any, b: any) => {
-  return b.start - a.start;
-});
+// dataWithDates.sort((a: any, b: any) => {
+//   return b.start - a.start;
+// });
 
-const now = Date.now();
-const futureDates = dataWithDates.filter(
-  (d: any) => new Date(d.start).getTime() > now
-);
-const pastDates = dataWithDates.filter(
-  (d: any) => new Date(d.start).getTime() < now
-);
+// const now = Date.now();
+// const futureDates = dataWithDates.filter(
+//   (d: any) => new Date(d.start).getTime() > now
+// );
+// const pastDates = dataWithDates.filter(
+//   (d: any) => new Date(d.start).getTime() < now
+// );
 ---
 
 <Layout title="CSE - Events">
   <SiteWidth>
-    <div class="mt-10 mb-14">
+    <!-- <div class="mt-10 mb-14">
       <div
         class="text-stone-50 text-2xl md:text-3xl xl:text-4xl font-lato pb-6 font-bold"
       >
@@ -50,6 +50,6 @@ const pastDates = dataWithDates.filter(
       <button class="btn btn-ghost text-stone-50 mx-auto block mb-8"
         >See Archive
       </button>
-    </a>
+    </a> -->
   </SiteWidth>
 </Layout>

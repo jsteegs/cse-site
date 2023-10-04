@@ -3,20 +3,20 @@ import FeedItem from "./FeedItem.astro";
 import { XMLParser } from "fast-xml-parser";
 import type { RssItem } from "./types";
 
-const response = await fetch(
-  "https://plankton-app-nanep.ondigitalocean.app/feed/"
-);
-const data = await response.text();
-const jObj = new XMLParser().parse(data);
-const items = jObj.rss.channel.item;
+// const response = await fetch(
+//   "https://plankton-app-nanep.ondigitalocean.app/feed/"
+// );
+// const data = await response.text();
+// const jObj = new XMLParser().parse(data);
+// const items = jObj.rss.channel.item;
 
-let slicedItems = items.slice(0, 4);
+// let slicedItems = items.slice(0, 4);
 ---
 
 <div class="basis-8/12">
-  {
+  <!-- {
     slicedItems.map((item: RssItem) => {
       return <FeedItem item={item} />;
     })
-  }
+  } -->
 </div>
