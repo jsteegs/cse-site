@@ -9,7 +9,7 @@ import alpinejs from "@astrojs/alpinejs";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://csusb.dev",
+  site: process.env.SITE_URL,
   integrations: [
     react(),
     tailwind({
