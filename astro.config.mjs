@@ -3,7 +3,6 @@ import { defineConfig } from "astro/config";
 // https://astro.build/config
 import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
-import image from "@astrojs/image";
 
 // https://astro.build/config
 import alpinejs from "@astrojs/alpinejs";
@@ -18,7 +17,6 @@ export default defineConfig({
         applyBaseStyles: false,
       },
     }),
-    image(),
     alpinejs(),
   ],
 });
