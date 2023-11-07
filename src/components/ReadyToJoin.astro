@@ -1,6 +1,9 @@
 ---
 import blurb from "../content/index/blurb.json";
 import H1Text from "./H1Text.astro";
+import links from "../content/links/social.json";
+import DiscordIcon from "./icons/DiscordIcon.astro";
+
 ---
 
 <div class="bg-stone-100 pt-12">
@@ -14,7 +17,11 @@ import H1Text from "./H1Text.astro";
       >
         {blurb.readyToRunWithThePack}
       </div>
-      <a href="contact"><button class="btn btn-primary">Contact us</button></a>
-    </div>
+      <a href={links.discord}>
+        <button class="btn btn-info gap-2">
+          <DiscordIcon classes="h-6 w-6 fill-white" />
+          <span class="hidden lg:inline">Join us on Discord</span>
+        </button>
+      </a>    </div>
   </div>
 </div>

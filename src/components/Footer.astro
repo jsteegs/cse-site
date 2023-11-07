@@ -8,7 +8,7 @@ import links from "../content/links/social.json";
 ---
 
 <div
-  class="bg-zinc-800 flex flex-col md:flex-row font-montserrat font-light text-stone-500 py-20 xl:py-24 text-base px-3 xl:px-0"
+  class="bg-zinc-800 flex flex-col md:flex-row font-montserrat font-light text-stone-300 py-20 xl:py-12 text-base px-3 xl:px-0"
 >
   <div class="md:w-5/12 pr-28 mb-14 md:mb-0 text-sm xl:text-base">
     <div class="mb-6">
@@ -17,14 +17,14 @@ import links from "../content/links/social.json";
     <div class="mb-10">
       {blurb.footer}
     </div>
-    <div class="">Copyright © 2022 Cal State San Bernardino</div>
+    <div class="">Copyright © 2023 Cal State San Bernardino</div>
   </div>
 
   <div class="basis-6/12 mb-14 md:mb-0">
     <div class="flex">
       <div class="basis-6/12">
-        <div class="mb-10 text-stone-400">Quick links</div>
-        <div class="flex flex-col gap-3">
+        <div class="mb-5 text-stone-400">Pages</div>
+        <div class="flex flex-col gap-3 mb-3">
           <a href="/" class="hover:underline w-fit">Homepage</a>
 
           <a href="/about/" class="hover:underline w-fit">About us</a>
@@ -32,12 +32,17 @@ import links from "../content/links/social.json";
             >Announcements</a
           >
           <a href="/calendar/" class="hover:underline w-fit">Events</a>
-          <a href="/contact/" class="hover:underline w-fit">Contact</a>
-          <a href="/archive/" class="hover:underline w-fit">Archive</a>
+          <a href="/archive/" class="hover:underline w-fit">Archive</a> 
         </div>
+        <a href={links.discord}>
+          <button class="btn btn-info">
+            <DiscordIcon classes="h-6 w-6 flex fill-white" />
+            <span class="">Discord
+          </button>
+        </a>
       </div>
       <div class="basis-6/12">
-        <div class="mb-10 text-stone-400">Sister Clubs</div>
+        <div class="mb-5 text-stone-400">Other Organizations</div>
         <div class="flex flex-col gap-3">
           {
             sisterClubs.sisters.map((sister) => {
@@ -55,16 +60,3 @@ import links from "../content/links/social.json";
     </div>
   </div>
 
-  <div class="basis-3/12">
-    <div class="mb-10 text-stone-400">Social Media</div>
-    <div class="">
-      <a href={links.discord}>
-        <button class="btn btn-info gap-2">
-          <DiscordIcon classes="h-6 w-6 fill-white" />
-          <span class="md:hidden xl:inline xs:inline">Join us on</span> Discord
-        </button>
-      </a>
-      <div class=""></div>
-    </div>
-  </div>
-</div>
